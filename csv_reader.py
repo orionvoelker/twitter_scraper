@@ -181,7 +181,7 @@ def thread_task (file_to_read, start, end, output_dir):
 def main():
 
     c = twint.Config()
-    c.Output = 'hohoro_4_23.csv'
+    c.Output = '4_23.csv'
     #c.Username = "adhd_superpower"
     #c.Output = input("What would you like to name the file (no file extension needed): ")
     #output_dir = input("Where would you like to save the pics + vids to: ")
@@ -192,7 +192,7 @@ def main():
     #twint.run.Favorites(c)
     
     csv_row_number = 0
-    with open ('hohoro_4_23.csv', newline = '') as csvfile:
+    with open ('4_23.csv', newline = '') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             csv_row_number += 1
